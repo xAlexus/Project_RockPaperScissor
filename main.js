@@ -2,6 +2,13 @@
 
 let computerSelection = getComputerSelection();
 let playerSelection = "Rock"
+let rules = {
+    rock: { losesTo: ["paper", "spock"] },
+    paper: { losesTo: ["scissors", "lizard"] },
+    scissors: { losesTo: ["rock", "spock"] },
+    spock: { losesTo: ["paper", "lizard"] },
+    lizard: { losesTo: ["rock", "scissors"] }
+};
 
 //Generates a ComputerChoice
 function getComputerSelection() {
@@ -18,14 +25,6 @@ function toLowerCase() {
 
 function playRound(playerSelection, computerSelection) {
     toLowerCase();
-      // Definiere ein Objekt mit den Regeln für das Spiel
-  let rules = {
-    rock: { losesTo: ["paper", "spock"] },
-    paper: { losesTo: ["scissors", "lizard"] },
-    scissors: { losesTo: ["rock", "spock"] },
-    spock: { losesTo: ["paper", "lizard"] },
-    lizard: { losesTo: ["rock", "scissors"] }
-  };
 
   if (playerSelection === computerSelection){
     return "Draw!"
