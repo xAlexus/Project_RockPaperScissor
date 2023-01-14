@@ -1,6 +1,15 @@
 
 let playerScore = 0;
 let computerScore = 0;
+const userScore_span = document.getElementById("user-score");
+const computerScore_span = document.getElementById("computer-score");
+const scoreBoard_div = document.getElementById(".score-board");
+const result_div = document.getElementById(".result");
+const rock_div = document.getElementById("rock");
+const paper_div = document.getElementById("paper");
+const scissor_div = document.getElementById("scissor");
+const lizard_div = document.getElementById("lizard");
+const spock_div = document.getElementById("spock");
 
 let rules = {
     rock: { losesTo: ["paper", "spock"] },
