@@ -74,6 +74,9 @@ p {
     cursor: pointer;
     background: #24272E;
 }
+img {
+    width: 100px;
+}
 #action-message {
     text-align: center;
     color: white;
